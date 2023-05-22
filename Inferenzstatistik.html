@@ -622,7 +622,6 @@ Samuel Merk
 </section>
 <section id="testung-mit-p-wert-beispiel-1" class="slide level2 smaller center">
 <h2>Testung mit <em>p</em>-Wert: Beispiel 1</h2>
-<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/440px-Image_created_with_a_mobile_phone.png" data-preview-link="true">Visualisierung von Magnetfeldern <i class="fa-solid fa-square-upright" aria-label="square-upright"></i></a></p>
 <div class="callout callout-tip no-icon callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -652,7 +651,7 @@ Samuel Merk
 <p><strong><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Interpretation</strong></p>
 </div>
 <div class="callout-content">
-<p>Es liegt ein Effekt substantieller Größe vor. <span class="math inline">\(H_0\)</span> kann zugunsten von <span class="math inline">\(H_A\)</span> verworfen werden.</p>
+<p>In den Daten liegt ein Effekt substantieller Größe vor. <span class="math inline">\(H_0\)</span> kann zugunsten von <span class="math inline">\(H_A\)</span> verworfen werden.</p>
 </div>
 </div>
 </div>
@@ -726,7 +725,7 @@ Samuel Merk
 <p><strong><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Interpretation</strong></p>
 </div>
 <div class="callout-content">
-<p>Es liegt ein Effekt sehr geringer Größe vor. Dennoch <span class="math inline">\(H_0\)</span> kann zugunsten von <span class="math inline">\(H_A\)</span> verworfen werden.</p>
+<p>In den Daten liegt ein Effekt sehr geringer Größe vor. Dennoch <span class="math inline">\(H_0\)</span> kann zugunsten von <span class="math inline">\(H_A\)</span> verworfen werden.</p>
 </div>
 </div>
 </div>
@@ -741,6 +740,80 @@ Samuel Merk
 <p>Im Gegensatz zu <em>p</em>-Werten bieten Bayes-Faktoren <span class="imp">relative Evidenz</span>. D.h. sie relationieren die Passung der vorliegenden Daten zur Alternativhypothese zur Passung der vorliegenden Daten zur Nullhypothese. Dadurch sind Bayes-Faktoren (im Gegensatz zu <em>p</em>-Werten) in der Lage auch Evidenz für eine Nullhypothese zu generieren. Typischerweise unterscheidet man zwei Bayes-Faktoren, <span class="math inline">\(BF_{10}\)</span> und <span class="math inline">\(BF_{01}\)</span>.</p>
 <p><span class="math display">\[BF_{10} = \frac{P(vorl.\;Daten|H_1)}{P(vorl.\;Daten|H_0)}\;\;\;\;\;\;\;\;\;BF_{01} = \frac{P(vorl.\;Daten|H_0)}{P(vorl.\;Daten|H_1)}\]</span></p>
 <p>Gilt <span class="math inline">\(BF_{10}=1\)</span> oder <span class="math inline">\(BF_{01}=1\)</span> muss <span class="math inline">\(P(vorl.\;Daten|H_1)=P(vorl.\;Daten|H_0)\)</span> gelten. Damit bieten die Daten keine relative Evidenz für <span class="math inline">\(H_0\)</span> oder <span class="math inline">\(H_1\)</span> womit der Test inkonklusiv ausfällt. Gilt bsp. <span class="math inline">\(BF_{10}\)</span> = 10.3 ist <span class="math inline">\(P(vorl.\;Daten|H_1)\)</span> 10.3-fach wahrscheinlicher als <span class="math inline">\(P(vorl.\;Daten|H_0)\)</span>. Damit liegt relative Evidenz für <span class="math inline">\(H_1\)</span> vor.</p>
+</section>
+<section id="testung-mit-bayes-faktor-beispiel-1" class="slide level2 smaller center">
+<h2>Testung mit Bayes-Faktor: Beispiel 1</h2>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-question-circle" aria-label="question-circle"></i> Forschungsfrage &amp; -design</strong></p>
+</div>
+<div class="callout-content">
+<p>Forschende fragen sich inwiefern die Visualisierung von Magnetfeldern mithilfe von Augmented Reality das konzeptuelle Verständnis der Schülerinnen und Schüler fördern kann. Sie führen ein randomisiert kontrolliertes Experiment durch, indem ein Gruppe mit und eine Gruppe ohne Augmented Reality arbeitet. Anschließend wird in beiden Gruppen das konzeptuelle Verständnis mit einem Test erfasst.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-chart-column" aria-label="chart-column"></i> Ergebnis</strong></p>
+</div>
+<div class="callout-content">
+<p>Ein Vergleich der beiden Gruppen im Posttest ergibt ein Cliff’s <span class="math inline">\(d = .31\)</span> zugunsten der Gruppe mit Augmented Reality mit einem <span class="math inline">\(BF_{01} = .01 = \frac{1}{10}\)</span> für die Nullhypothese <span class="math inline">\(H_0:\; d = 0\)</span> und die Alternativhypothese <span class="math inline">\(H_A:\; d &gt; 0\)</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Interpretation</strong></p>
+</div>
+<div class="callout-content">
+<p>In den Daten liegt ein Effekt substantieller Größe vor. Da die Daten unter Annahme der Alternativhypothese 10 mal wahrscheinlicher sind, als unter der Annahme der Nullhypothese liegt auch starke inferenzstatistische Evidenz für die Existenz des Effektes in der Population vor.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="testung-mit-bayes-faktor-beispiel-2" class="slide level2">
+<h2>Testung mit Bayes-Faktor: Beispiel 2</h2>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-question-circle" aria-label="question-circle"></i> Forschungsfrage &amp; -design</strong></p>
+</div>
+<div class="callout-content">
+<p>Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Probandinnen nach ihrem vermeintlichen Lernstil. Diese durchlaufen danach eine Unterrichtseinheit zum Thema Photosynthese entweder (randomisiert) gemäß dieses vermeintlichen Lernstils oder nicht gemäß diesem.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-chart-column" aria-label="chart-column"></i> Ergebnis</strong></p>
+</div>
+<div class="callout-content">
+<p>Ein Vergleich der beiden Gruppen einem Posttest ergibt ein Cohen’s <span class="math inline">\(U_3 = .53\)</span> mit einem <span class="math inline">\(BF{10}=.001 = \frac{1}{1000}\)</span> für die Nullhypothese <span class="math inline">\(H_0:\; U_3 = .5\)</span> und die Alternativhypothese <span class="math inline">\(H_A:\; U_3 &gt; .5\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Interpretation</strong></p>
+</div>
+<div class="callout-content">
+<p>Da die Daten unter der Annahme von <span class="math inline">\(H_0\)</span> 1000 mal wahrscheinlich sind, als unter der Annahe von <span class="math inline">\(H_A\)</span> liegt sehr starke inferenzstatistische Evidenz für einen Nulleffekt vor.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="literatur" class="slide level2 smaller scrollable">
 <h2>Literatur</h2>
