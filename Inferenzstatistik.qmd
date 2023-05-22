@@ -126,11 +126,11 @@ close(fileConn)
 <br> 
 
 [(Inferenzstatistische) [*Schätzung*]{.imp} (estimation with quantified uncertainty) treffen anhand von Stichproben Aussagen über Parameter der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.  
-(Inferenztsatistische) [*Hypothesentests*]{.imp} bewerten anhand von Stichprobendaten die Gültigkeit von Hypothesen in der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.]{.fragment fragment-index=7}
+(Inferenztstatistische) [*Hypothesentests*]{.imp} bewerten anhand von Stichprobendaten die Gültigkeit von Hypothesen in der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.]{.fragment fragment-index=7}
 
 
 ## Bsp.: Parameterschätzung {.smaller}
-> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule ohne Noten?
+> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule mit Noten?
 
 . . .
 
@@ -173,7 +173,7 @@ Daten:
 
 
 ## Bsp.: Parameterschätzung {.smaller}
-> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule ohne Noten?
+> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule mit Noten?
 
 :::: {.columns}
 
@@ -215,7 +215,7 @@ Daten:
 
 
 ## Bsp.: Parameterschätzung {.smaller}
-> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule ohne Noten?
+> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule mit Noten?
 
 :::: {.columns}
 
@@ -250,7 +250,7 @@ ggplot(dat_long) +
   theme(axis.text.y = element_blank()) +
   labs(title = "Posterior Estimation", 
        subtitle = "with quantified uncertainty",
-       caption = paste("Der »Vertrauenbereich« (95% Highest Densitiy Interval)\nreicht von ",
+       caption = paste("Der »Vertrauensbereich« (95% Highest Densitiy Interval)\nreicht von ",
                        round(qbeta(.025,(1 + y), (1 + n - y)), 2),
                        " bis ",
                        round(qbeta(.975,(1 + y), (1 + n - y)), 2)))
@@ -269,7 +269,7 @@ Daten:
 
 
 ## Bsp.: Parameterschätzung {.smaller}
-> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule ohne Noten?
+> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule mit Noten?
 
 :::: {.columns}
 
@@ -304,7 +304,7 @@ ggplot(dat_long) +
   theme(axis.text.y = element_blank()) +
   labs(title = "Posterior Estimation", 
        subtitle = "with quantified uncertainty",
-       caption = paste("Der »Vertrauenbereich« (95% Highest Densitiy Interval)\nreicht von ",
+       caption = paste("Der »Vertrauensbereich« (95% Highest Densitiy Interval)\nreicht von ",
                        round(qbeta(.025,(1 + y), (1 + n - y)), 2),
                        " bis ",
                        round(qbeta(.975,(1 + y), (1 + n - y)), 2)))
@@ -322,7 +322,7 @@ Daten:
 ::::
 
 ## Bsp.: Parameterschätzung {.smaller}
-> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule ohne Noten?
+> Forschungsfrage: Welcher Anteil der Eltern befürwortet eine Grundschule mit Noten?
 
 :::: {.columns}
 
@@ -357,7 +357,7 @@ ggplot(dat_long) +
   theme(axis.text.y = element_blank()) +
   labs(title = "Posterior Estimation", 
        subtitle = "with quantified uncertainty",
-       caption = paste("Der »Vertrauenbereich« (95% Highest Densitiy Interval)\nreicht von ",
+       caption = paste("Der »Vertrauensbereich« (95% Highest Densitiy Interval)\nreicht von ",
                        round(qbeta(.025,(1 + y), (1 + n - y)), 2),
                        " bis ",
                        round(qbeta(.975,(1 + y), (1 + n - y)), 2)))
@@ -382,8 +382,8 @@ Daten:
 
 ::: {.column width='40%'}
 * Hypothesen 
-    * Nullhypothese: *Der Anteil der Befürworter\*innen einer Grundschule mit Noten ist ≤ 50%*<br>
-    * Alternativhypothese: *Mindestens 50% der Eltern befürworten eine Grundschule mit Noten*
+    * Nullhypothese: *Der Anteil der Befürworter\*innen einer Grundschule mit Noten ist ≤ 50%.*<br>
+    * Alternativhypothese: *Mehr als 50% der Eltern befürworten eine Grundschule mit Noten.*
 * Daten: 
     * 3 für »mit Noten«
     * 1 für »ohne Noten«
@@ -460,7 +460,7 @@ Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Proband
 
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa chart-column >}} Ergebnis
-Ein Vergleich der beiden Gruppen einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem *p*-Wert von .073 für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
+Ein Vergleich der beiden Gruppen mit einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem *p*-Wert von .073 für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
 :::
 
 . . .
@@ -533,7 +533,7 @@ Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Proband
 
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa chart-column >}} Ergebnis
-Ein Vergleich der beiden Gruppen einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem $BF{10}=.001 = \frac{1}{1000}$ für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
+Ein Vergleich der beiden Gruppen mit einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem $BF{10}=.001 = \frac{1}{1000}$ für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
 :::
 
 . . .
