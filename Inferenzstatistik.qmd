@@ -125,8 +125,8 @@ close(fileConn)
 
 <br> 
 
-[(Inferenzstatistische) [*Schätzung*]{.imp} (estimation with quantified uncertainty) treffen anhand von Stichproben Aussagen über Parameter der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.  
-(Inferenztstatistische) [*Hypothesentests*]{.imp} bewerten anhand von Stichprobendaten die Gültigkeit von Hypothesen in der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.]{.fragment fragment-index=7}
+[(Inferenzstatistische) [*Schätzung*]{.imp} (estimation with quantified uncertainty) trifft anhand von Stichproben Aussagen über Parameter der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.  
+(Inferenzstatistische) [*Hypothesentests*]{.imp} bewerten anhand von Stichprobendaten die Gültigkeit von Hypothesen in der Grundgesamtheit (Population) aus der die Stichprobe gezogen wurde.]{.fragment fragment-index=7}
 
 
 ## Bsp.: Parameterschätzung {.smaller}
@@ -450,7 +450,7 @@ In den Daten liegt ein Effekt substantieller Größe vor. $H_0$ kann zugunsten v
 
 
 
-## Testung mit *p*-Wert: Beispiel 2
+## Testung mit *p*-Wert: Beispiel 2 {.smaller}
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa question-circle >}} Forschungsfrage & -design
 Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Probandinnen nach ihrem vermeintlichen Lernstil. Diese durchlaufen danach eine Unterrichtseinheit zum Thema Photosynthese entweder (randomisiert) gemäß dieses vermeintlichen Lernstils oder nicht gemäß diesem.
@@ -470,7 +470,7 @@ Ein Vergleich der beiden Gruppen mit einem Posttest ergibt ein Cohen's $U_3 = .5
 Da der *p*-Wert über dem $\alpha$-Wert von .05 liegt ist die Studie inkonklusiv. Die Forschenden wissen nach der Studie genau gleich viel wie zuvor, es wurde keine Erkenntnis generiert.
 :::
 
-## Testung mit *p*-Wert: Beispiel 3
+## Testung mit *p*-Wert: Beispiel 3 {.smaller}
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa question-circle >}} Forschungsfrage & -design
 Forschende untersuchen ob Schülerinnen und Schüler aus ländlichen Gebieten seltener vom Religionsunterricht abgemeldet werden. Dazu führen Sie eine Sekundäranalyse eines großen Paneldatensatzes durch.
@@ -480,26 +480,26 @@ Forschende untersuchen ob Schülerinnen und Schüler aus ländlichen Gebieten se
 
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa chart-column >}} Ergebnis
-Ein Vergleich der beiden Gruppen ergibt ein Cliff's d von .04 mit einem *p*-Wert von .008 für die Nullhypothese $H_0:\; d = 0$ und die Alternativhypothese $H_0:\; d > 0$
+Ein Vergleich der beiden Gruppen ergibt ein Cliff's d von .04 mit einem *p*-Wert von .008 für die Nullhypothese $H_0:\; d = 0$ und die Alternativhypothese $H_A:\; d > 0$
 :::
 
 . . .
 
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa lightbulb >}} Interpretation
-In den Daten liegt ein Effekt sehr geringer Größe vor. Dennoch $H_0$ kann zugunsten von $H_A$ verworfen werden.
+In den Daten liegt ein Effekt sehr geringer Größe vor. Dennoch kann $H_0$ zugunsten von $H_A$ verworfen werden.
 :::
 
 
 ## <!--Bayes-Faktoren--> {.center .smaller}
 [{{< fa scale-unbalanced >}} Bayes-Faktoren]{.em15 .c .imp}
 
-## Bayes-Faktoren: Definition {.smaller}
+## Bayes-Faktoren: Definition {.smaller .center}
 Im Gegensatz zu *p*-Werten bieten Bayes-Faktoren [relative Evidenz]{.imp}. D.h. sie relationieren die Passung der vorliegenden Daten zur Alternativhypothese zur Passung der vorliegenden Daten zur Nullhypothese. Dadurch sind Bayes-Faktoren (im Gegensatz zu *p*-Werten) in der Lage auch Evidenz für eine Nullhypothese zu generieren. Typischerweise unterscheidet man zwei Bayes-Faktoren, $BF_{10}$ und $BF_{01}$.
 
 $$BF_{10} = \frac{P(vorl.\;Daten|H_1)}{P(vorl.\;Daten|H_0)}\;\;\;\;\;\;\;\;\;BF_{01} = \frac{P(vorl.\;Daten|H_0)}{P(vorl.\;Daten|H_1)}$$
 
-Gilt $BF_{10}=1$ oder $BF_{01}=1$ muss $P(vorl.\;Daten|H_1)=P(vorl.\;Daten|H_0)$ gelten. Damit bieten die Daten keine relative Evidenz für $H_0$ oder $H_1$ womit der Test inkonklusiv ausfällt. Gilt bsp. $BF_{10}$ = 10.3 ist $P(vorl.\;Daten|H_1)$ 10.3-fach wahrscheinlicher als $P(vorl.\;Daten|H_0)$. Damit liegt relative Evidenz für $H_1$ vor.
+Gilt $BF_{10}=1$ oder $BF_{01}=1$ muss $P(vorl.\;Daten|H_1)=P(vorl.\;Daten|H_0)$ gelten. Damit bieten die Daten keine relative Evidenz für $H_0$ oder $H_1$ womit der Test inkonklusiv ausfällt. Gilt bspw. $BF_{10}$ = 10.3 ist $P(vorl.\;Daten|H_1)$ 10.3-fach wahrscheinlicher als $P(vorl.\;Daten|H_0)$. Damit liegt relative Evidenz für $H_1$ vor.
 
 ## Testung mit Bayes-Faktor: Beispiel 1 {.smaller .center}
 ::: {.callout-tip icon=false collapse="false"}
@@ -523,7 +523,7 @@ In den Daten liegt ein Effekt substantieller Größe vor. Da die Daten unter Ann
 
 
 
-## Testung mit Bayes-Faktor: Beispiel 2
+## Testung mit Bayes-Faktor: Beispiel 2 {.smaller}
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa question-circle >}} Forschungsfrage & -design
 Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Probandinnen nach ihrem vermeintlichen Lernstil. Diese durchlaufen danach eine Unterrichtseinheit zum Thema Photosynthese entweder (randomisiert) gemäß dieses vermeintlichen Lernstils oder nicht gemäß diesem.
@@ -533,7 +533,7 @@ Forschende versuchen den Lernstilmythos zu widerlegen. Dazu befragen Sie Proband
 
 ::: {.callout-tip icon=false collapse="false"}
 ## {{< fa chart-column >}} Ergebnis
-Ein Vergleich der beiden Gruppen mit einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem $BF{10}=.001 = \frac{1}{1000}$ für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
+Ein Vergleich der beiden Gruppen mit einem Posttest ergibt ein Cohen's $U_3 = .53$ mit einem $BF_{10}=.001 = \frac{1}{1000}$ für die Nullhypothese $H_0:\; U_3 = .5$ und die Alternativhypothese $H_A:\; U_3 > .5$.
 :::
 
 . . .
